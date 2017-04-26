@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="spotistyle.css">
+    <title>Spotify</title>
+  </head>
+
+  <body>
+
+<div class="container">
+
+
+    <header>
+      <h1>Titolo</h1>
+      <div id="nav">
+        <a href="#" id="imp-utente"><img id="user-icon" src="ok.png"><span id="one">User</span></a>
+      </div>
+    </header>
+
+    <aside>
+      <br><br>
+      <form id="form" action="index.php" method="post">
+      <input id="barra" type="text" name="cerca" placeholder="Search"><input id="bott" type="image">
+      </form>
+      <div id="mymusic">
+      <h3>La Mia Musica</h3>
+      <br>
+      <a id="menu" href="brani.html" target="pp">Brani</a><hr><br><br>
+      <a id="menu" href="album.html" target="pp">Album</a><hr><br><br>
+      <a id="menu" href="artista.html" target="pp">Artista </a><hr><br><br>
+      <a id="menu" href="playlist.html" target="pp">Playlist</a><hr><br><br>
+    </div>
+
+      <article>
+        <h1>riproduzione</h1>
+        <audio controls>
+
+          <source src="gigi.mp3" type="video/mp3">
+
+        </audio>
+      </article>
+    </aside>
+
+    <iframe name="pp" src="brani.html"></iframe>
+
+  </div>
+
+  </body>
+</html>
