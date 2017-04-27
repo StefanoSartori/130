@@ -14,7 +14,7 @@ html, body {
 #log{
   float: right;
   margin-right: 30px;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 div.container{
@@ -40,10 +40,9 @@ h1 {
 
 #nav{
   text-align: center;
-  border-style: solid;
   position: absolute;
-  top: 120px;
-  left: 45%;
+  top: 100px;
+  left: 42%;
   width: 200px;
 }
 
@@ -65,9 +64,9 @@ h1 {
 
 aside {
   position: relative;
-  width: 300px;
+  width: 20%;
   background: #2F4F4F;
-  height: 594px;
+  height: 609px;
   }
 
 
@@ -142,8 +141,8 @@ article{
 
 iframe {
   position: absolute;
-  right: 8px;
-  top:158px;
-  width: 79%;
-  height: 78%;
+  right: 0px;
+  top:150px;
+  width: 80%;
+  height: 606px;
 }
