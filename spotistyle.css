@@ -8,7 +8,7 @@ html, body {
   #989898*/
 
   *{
-    color: #FFFFF0;
+
   }
 
 #log{
@@ -36,6 +36,7 @@ h1 {
   text-align: center;
   padding-top: 30px;
   margin-top: 0px;
+  color: #FFFFF0;
 }
 
 #nav{
@@ -44,6 +45,7 @@ h1 {
   top: 100px;
   left: 42%;
   width: 200px;
+  color: #FFFFF0;
 }
 
 #user-icon{
@@ -54,12 +56,14 @@ h1 {
 #imp-utente{
   text-decoration: none;
   opacity:0.7;
+  color: #FFFFF0;
 }
 
 #one {
   margin-top: 7px;
   position: absolute;
   margin-left: 10px;
+  color: #FFFFF0;
 }
 
 aside {
@@ -67,6 +71,7 @@ aside {
   width: 20%;
   background: #2F4F4F;
   height: 609px;
+  color: #FFFFF0;
   }
 
 
@@ -124,6 +129,7 @@ h3{
     text-decoration: none;
     opacity:0.7;
     margin-left: 60px;
+    color: #FFFFF0;
   }
 
   hr {
