@@ -7,30 +7,46 @@
 
   <body>
 
-    <img src="">
+    <?php
 
-    <div class="">
-      Titolo <br>
-      Autore <br>
-      anno
-    </div>
+    $conn= mysqli_connect("localhost","root","","serena");
 
-
-
+      if(!$conn){
+        echo "errore di connessione";
+        exit();
+      }
 
 
-  <div>
-    <div id="immaginealbum"> 
-      <img src="albumimage.png" id="imgalbumartist" alt="album_image" style="width:60px;height:60px;"">  
-    </div>
+      $query_album="SELECT album, fotoalbum, anno from song ORDER BY album";
 
-    <DIV>
-      <h5>ALBUM</h5>
-      <h3></h3>
-      <h6>Artista</h6>
-    </DIV>
-  </div>
+      $ris_album=mysqli_query($conn, $query_album);
+      if (!$query_album){
+        echo "errore di query1";
+      }
 
-  
+
+
+    $n=mysql_num_rows($ris_album);
+
+    if ($n>0) {
+      echo "<table>";
+      while ($linea=mysqli_fetch_array($ris_album)) {
+         echo "<tr>";
+         echo "<td>".$linea['album']."</td>";
+         echo "<td> <img src='".$linea['fotoalbum']."'></td>";
+         echo "<td>".$linea['anno']."</td>";
+         echo "</tr>";
+      }
+      echo "</tabel>";
+    }
+    else {
+      echo "Album non trovato";
+    }
+
+    mysqli_close($conn);
+     ?>
+
+
+
   </body>
 </html>
