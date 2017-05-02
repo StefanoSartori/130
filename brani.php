@@ -7,7 +7,40 @@
   <body>
 
 
-<?php
+    <?php
+
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "serena";
+
+  //Creazione connessione - apre una nuova connessione a MySQL Server
+	$conn = mysqli_connect($servername, $username, $password, $dbname);
+	// Check connection
+	if (!$conn) {
+		die("Connection failed: ". mysqli_connect_error());
+	}
+
+	$sql = "SELECT canzone, album, artista, durata, anno, link_youtube FROM song";
+	$result = mysqli_query($conn, $sql);
+
+	if (mysql_num_rows($result) > 0)
+	{
+    // output data of each row
+    while($row = mysqli_fetch_assoc($result)) {
+        echo $row["canzone"]. $row["album"]. $row["artista"]. $row["durata"] . $row["anno"]. $row["link_youtube"];
+    }
+} else {
+    echo "0 results";
+}
+
+	mysqli_close($conn);
+
+
+     ?>
+
+
+<!--<?php
 
 $conn= mysqli_connect("localhost","root","","serena");
 
@@ -46,7 +79,7 @@ else {
 }
 
 mysqli_close($conn);
- ?>
+ ?>-->
 
 
   </body>
