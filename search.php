@@ -7,6 +7,8 @@ $dbname = "serena";
 
 $cerca=$_POST["cerca"];
 
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+
 
 if(!$conn){
  echo "errore di connessione"; //die ("connection error.mysqli_connect:error()");
@@ -37,4 +39,6 @@ else {
  }
 
  mysqli_close($conn);
+
+ //voltolini.unitn@gmail.com
  ?>

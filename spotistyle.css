@@ -102,11 +102,10 @@ h3{
     opacity:0.7;
   }
 
-article{
-  position: absolute;
-  bottom: 0px;
-
-}
+  article{
+    position: absolute;
+    bottom: 0;
+  }
 
 iframe {
   position: absolute;
